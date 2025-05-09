@@ -1,0 +1,198 @@
+* commit 376032eb7f52004c662b2161f6c6efa5165e7ec4
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Fri May 9 13:51:06 2025 -0400
+| 
+|     Created a new readme and changed original readme
+| 
+* commit 60dec057ea31f72a9bda8aa36c72e13eb1aefc6a
+  Author: logananglin98 <logananglin98@gmail.com>
+  Date:   Fri May 9 13:33:30 2025 -0400
+  
+      first commit
+  
+* commit 66bbd0c25e207cef432330af4870918b1d066666
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Dec 5 02:40:43 2024 -0500
+| 
+|     Final Commit. Updated CSS so the app looks better. Fixed a major bug I missed that was causing a mismatch between a file and a version of the file afer being encrypted and decrypted. App now works with all file types I have tested except for disk images. Installers for the final version of the app have replaced the previous installers in the Google Drive folder.
+| 
+* commit 8b18e9f6c7e492555646043eaac62b661e35cc43
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Sat Nov 30 21:28:14 2024 -0500
+| 
+|     Made some changes to README. Tested the rpm installer on Fedora with success. See previous commit message for full details on finished app.
+| 
+* commit 6e5e1dd52b4e269994601b5f590a21e20a7b4327
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Sat Nov 30 02:30:39 2024 -0500
+| 
+|     This commit signifies what I consider to be a complete final project. This may be what I submit for a final grade, however, I may try adding some features depending on how long that will take.
+|     
+|     As of now, running the app from installing it to encrypting or decrypting a file works as follows:
+|     
+|     The app can be installed using one of the installers in my 2024FA-CSC450/Individual Work/Final PRoject Installers folder. There is a link to this folder in the README.
+|     
+|     Once the app is installed and launched, a login screen will appear. There is a default/testing password with the username and password both being 123, however, the an account can be created using a create account link found on the first screen.
+|     
+|     After logging in, an end user can upload a file to encrypt or click the "decrypt an encrypted file" link to decrypt a file. Most file types work. I have had success with images, sound files, .tar.gz files, executables, and several other file types. Some notable exceptions were 7zip files and .iso image files. Once the uploaded file has been encrypted, the user will be prompted to select a save location using the OS file manager. The original copy of the file IS NOT deleted, so the user will need to delete it themselves if necessary for their needs.
+|     
+|     An encrypted file can only be decrypted by the same account that encrypted it. Because the login information is handled locally, this also means that the decryption must happen on the same machine using the same install of the app* UNLESS the user navigates to their Electron Encryption appdata folder (roaming for Windows, .config for Linux) and copies .logins.csv to the same folder on another machine with the app installed.
+|     *Because the app's appdata is stored in Roaming, it may carry over to other Windows machines using the same Microsoft account, but I haven't tested this.
+|     
+|     I have tested the functionality of this app on Windows 10 and Pop OS (an Ubuntu-based Linux distro). I have not tested the RHEL installer.
+| 
+* commit 1a3bcc34d380980ce3a556e41721cc9a118698d4
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 28 20:07:02 2024 -0500
+| 
+|     The app is for the most part finished. Testing the installers for Windows
+| 
+* commit f1dcf9e7e39fcbef2c6829c7194db1c052cc6fb5
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 28 16:48:22 2024 -0500
+| 
+|     The app code is mostly done at this point. I'm running into some issues compiling the code into an app. Making this commit so I can delete my local copy of this repository, re-clone it, and reinstall node_modules and npm.
+| 
+* commit 315fae8531945da06166e474db3f8f09e231c058
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 28 03:01:39 2024 -0500
+| 
+|     .logins.csv is now stored in the appdata folder or .config folder asssociated with the app. The app is compiling and runs correctly for Debian/Ubuntu-based and RHEL-based Linux distros. Working to add the ability to install the app on Windows and maybe also macos and Arch-based Linux distros as well.
+| 
+* commit bb27f164e539fbeb25524144805fb5ba5c9ed25d
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 28 02:19:29 2024 -0500
+| 
+|     User can now log out. I changed the name of logins.csv to .logins.csv so it will be hidden in the appdata folder when it is installed. This is a minor change that may increase security a tiny bit. Added better documentation to create_account.js and login.js. Will do the same for encrypt.js and decrypt.js later. Working on getting a working version of the compiled app.
+| 
+* commit 09a5f8f4605bb07f62fbbedb795e0aa6174fe0da
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 28 01:34:22 2024 -0500
+| 
+|     Encryption and decryption scripts are both complete. Will add a way of logging out and will then try to run the app in its compiled form.
+| 
+* commit 36ed7abc5beed7e11304d4da683cc1abdeeb46e9
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Wed Nov 27 22:24:50 2024 -0500
+| 
+|     html set up so user can choose to encrypt or decrypt a file after they log in. Working on decrypt.js
+| 
+* commit 8f916a237bf4b4c9bb2c757d6d51458313462f9f
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Wed Nov 27 22:10:18 2024 -0500
+| 
+|     encrypt.js has been set up to only encrypt files, uses a class instead of purely functions, and may be completely finished. Will work on Decrypt next.
+| 
+* commit 491d052955aa7d6470dcc8876254df29b335b27c
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Mon Nov 25 00:07:03 2024 -0500
+| 
+|     Added code to allow any file to be encrypted and decrypted. The script still encrypts and decrypts the code in a single run, but now, the uploaded file is encrypted, and any file type can be used. What still needs to be implemented:  *Separating the scripts and setting up html pages so the user can encrypt OR decrypt a file without doing both at the same time  *Allow user to select where encrypted or decrypted file will be saved using their file manager
+| 
+* commit bb4ca28496048a4a48f8587d01c8eca8f6ae948a
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Sun Nov 24 20:47:43 2024 -0500
+| 
+|     This is a "working" version of the encrypt and decrypt code. As of now, both the encrypt code and decrypt code are located in the encrypt.js script.  They both encrypt a file called "test_file.txt" instead of a file the user uploads. They both successfully use a global key variable from index.js that is set when the user logs in. The key is derived from the third column in the csv. The initialization vector (iv) is randomly created in the encrypt code every time a file is encrypted, therefore, a file encrypted more than once by the same user will result in different encrypted text. What still needs to be implimented:  *Move decrypt code to decrypt.js  *Allow user to choose between encrypting and decrypting a file with the front end  *Integrating the upload functionality from encrypt.html so it passes the file into encrypt.js so this scipt can encrypt a file the user selects instead of test_file.txt  *The same process proceeding but with the decrypt functionality.  *Both encrypting and decrypting a file will end with the user being promped with a download
+| 
+* commit 8ca7baab4e2540f3696c32809926ec07c2b145f0
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 21 21:46:41 2024 -0500
+| 
+|     Finished About section with bibliographical information. Also, the requirements section was updated and moved to the main README.
+| 
+* commit 5c6b06d461b38c6b53dd6210896ecc34f9e0350a
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Wed Nov 20 19:20:11 2024 -0500
+| 
+|     Completed the getRandomKey() function in create_account that adds a 256-bit key to each login.
+| 
+* commit 220d6721e7ebccc925e831dcfdefdcae97636cbe
+| Author: Logan Anglin <logananglin98@pop-os.berea.edu>
+| Date:   Wed Nov 20 18:10:05 2024 -0500
+| 
+|     Made some minor changes to the formatting of the README in the outer directory
+| 
+* commit 089860f6420203deaee194125b6eb5ba0bd9b01c
+| Author: Logan Anglin <logananglin98@pop-os.berea.edu>
+| Date:   Wed Nov 20 17:49:53 2024 -0500
+| 
+|     Completed encrypt.html and added empty scripts for it and an decrypt.html page I plan on implementing soon
+| 
+* commit 95a1c4045a1c9dbeff7e46e78c4679f463d33daa
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Sat Nov 16 22:02:05 2024 -0500
+| 
+|     Account handling, login script, and create account script completed for pre-encryption-implementation stage. These have been completed WITHOUT any encryption functionality implemented. A way of getting a checksum or key will need to be added to create_account.js. Some way of passing the key or checksum to the encrytion and decryption script will need to be implemented.
+| 
+* commit 8196c8a40932e78366ae05c54324cb033355d418
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Sat Nov 16 15:31:44 2024 -0500
+| 
+|     I believe I fixed the issues mentioned before. I'm still working on create_account.js and adding checks for password strength, however, once I finish create_account.js, login.js will be relatively easy to implement.
+| 
+* commit 503588c053aaa984a1291179b274673bfc4aaa06
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Sat Nov 16 00:30:07 2024 -0500
+| 
+|     Got much more of the create_account script done, however, I'm getting a weird problem where password_too_short.html is loaded even if; the file password_too_short is deleted, caches are cleaned, dependencies are re-installed, among several other attempts in tandem. I'm going to try deleting EVERYTHING related to this electron app and repo on my PC and clone it again.
+| 
+* commit a75196d655fe129b3458cdf690ec0736d8395ee3
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Fri Nov 15 20:58:16 2024 -0500
+| 
+|     create_account.js is appending to csv. Need to add code to check csv for if the account already exists and checks the length of the username and password. Also need to check if password and confirm_password are the same
+| 
+* commit 1dfa23b6807e34047c47ab120b76bc32c24cb918
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Fri Nov 15 18:06:01 2024 -0500
+| 
+|     Hello World Electron Forge app created
+| 
+* commit 1ce8447199d78fa42caad02e706779ae0441f635
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 14 00:58:09 2024 -0500
+| 
+|     Finished R03
+| 
+* commit 07d6be5f2cc32d6e08c5cefd997aa09dc1492a59
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Thu Nov 14 00:02:14 2024 -0500
+| 
+|     Changed title of project. Corrected some readme formatting.
+| 
+* commit 78995362d582a2560f8cb37897688c445077ca7f
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Wed Nov 13 23:01:54 2024 -0500
+| 
+|     Moved unused files to IGNORED
+| 
+* commit de5d893956104b637c775bf4aac497a0b6f13693
+| Author: logananglin98 <logananglin98@gmail.com>
+| Date:   Wed Nov 13 22:51:01 2024 -0500
+| 
+|     Finished ReadMe. Sorry for the late commit.
+| 
+* commit f3ddd6527dcf824993453b12ce89e57f4099b17f
+| Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+| Date:   Wed Oct 30 17:41:40 2024 +0000
+| 
+|     add online IDE url; add deadline
+| 
+* commit 0fc16b71cfab6ea813b6a547366f6d0162c2dd55
+| Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+| Date:   Wed Oct 30 17:41:37 2024 +0000
+| 
+|     Setting up GitHub Classroom Feedback
+| 
+* commit 5fba1443b04d726314ff4af06c1bb3c64860fbdc
+| Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+| Date:   Wed Oct 30 17:41:37 2024 +0000
+| 
+|     GitHub Classroom Feedback
+| 
+* commit 095a1a8a170b0fa03fc50ad408a2ced5ca33e8c5
+  Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+  Date:   Tue Oct 22 10:58:35 2024 +0000
+  
+      Initial commit
