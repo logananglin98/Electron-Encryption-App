@@ -13,7 +13,7 @@ I will need to install Node, Electron, and Javascript on my laptop using node an
 
 ## Installers
 
-- [Windows and Linux Installers for Electron Encryption](https://drive.google.com/drive/folders/146AgZZoUjxwRbeXa7Cxl97feMKgCf2fX?usp=drive_link)
+- [Windows and Linux Installers for Electron Encryption](https://drive.google.com/file/d/1QXbiaxyVhHPbm49FOPfTuJeSSdMtKs4Y/view?usp=sharing)
 
 ## How to run the app:
 
