@@ -1,6 +1,6 @@
 # Electron Encryption
 
-## Warning: DO NOT USE THIS FOR ANY GENUINE ENCRYPTION NEEDS!
+## Warning: DO NOT USE FOR ANY GENUINE ENCRYPTION NEEDS!
 
 ## Description
 
