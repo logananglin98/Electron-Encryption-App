@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron Encryption</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <header>
+    <h2>Create an Account: </h2>
+    <form id="account_form">
+      <p>
+        <label for="first">Select username:</label>
+        <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+      </p>
+      <p>
+        <label for="password">Select password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+      </p>
+      <p>
+        <label for="confirm_password">Confirm password:</label>
+        <input type="password" id="confirm_password" name="confirm-password" placeholder="Confirm your Password" required>
+      </p>
+        <button type="submit">Submit</button>
+        <a href="index.html"> or Login with an existing account</a>
+    </form>
+
+    <script src="../accounts/create_account.js"></script>
+  </header>
+
